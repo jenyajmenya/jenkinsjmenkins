@@ -17,7 +17,7 @@ pipeline {
                 sh "apt-get install nginx"
                 sh "wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -"
                 sh "apt-get install apt-transport-https"
-                sh "echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee –a /etc/apt/sources.list.d/elastic-7.x.list"
+                sh "echo 'deb https://artifacts.elastic.co/packages/7.x/apt stable main' | sudo tee –a /etc/apt/sources.list.d/elastic-7.x.list"
                 sh "apt-get update"
                 sh "apt-get install elasticsearch"
                 sh "systemctl start elasticsearch.service"
