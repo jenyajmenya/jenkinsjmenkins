@@ -4,6 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                sh "whoami"
+                
                 // Get some code from a GitHub repository
                 git 'https://github.com/jenyajmenya/jenkinsjmenkins.git'
 
