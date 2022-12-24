@@ -8,7 +8,7 @@ pipeline {
                 git 'https://github.com/jenyajmenya/jenkinsjmenkins.git'
 
                 // Install nginx.
-                sh "apt-get install nginx"
+                sh "sudo apt-get install nginx"
             }
        }
     }
