@@ -1,0 +1,7 @@
+server.port: 5601
+
+server.host: "localhost"
+
+elasticsearch.hosts: ["http://localhost:9200"]
+
+# /etc/kibana/kibana.yml
